@@ -1,0 +1,1006 @@
+{
+    "name": "Apps",
+    "apps": [],
+    "children": [{
+            "name": "Communication",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": ["Cute Shark Sticker for WhatsApp, WAStickerApps - Cute Stickers (Paid),Web Browser - No Ads, exDialer Pink Theme, ExDialer PRO Key,ZoiPer Pro - SIP Softphone, Portable Wi - Fi hotspot Premium, TeamSpeak 3 - Voice Chat Software "],
+                    "children": [{
+                            "name": "3",
+                            "value": 3,
+                            "apps": ["ZoiPer Pro - SIP Softphone, Portable Wi-Fi hotspot Premium, TeamSpeak 3 - Voice Chat Software"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 10,
+                            "apps": ["Web Browser - No Ads, exDialer Pink Theme, ExDialer PRO Key"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 2,
+                            "apps": ["Cute Shark Sticker for WhatsApp", " WAStickerApps - Cute Stickers (Paid)"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": ["ALE Success Stories, BabyPop, Cat Lovers Community,Secret Codes Book 2019 Free, Navigators Groningen, Abengibre Informa,Portable Wi-Fi hotspot Free, iTel Mobile Dialer Express, KeepCalling Best Calling App,Androwser: Multiview Browser, TIM Chat PA, My Bright Day,WAStickersApps for whatsapp"],
+                    "children": [{
+                            "name": "1",
+                            "value": 1,
+                            "apps": ["WAStickersApps for whatsapp"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 8,
+                            "apps": ["Androwser: Multiview Browser, TIM Chat PA, My Bright Day"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 120,
+                            "apps": ["Portable Wi-Fi hotspot Free, iTel Mobile Dialer Express, KeepCalling Best Calling App"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 429,
+                            "apps": ["Secret Codes Book 2019 Free, Navigators Groningen, Abengibre Informa"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 29,
+                            "apps": ["ALE Success Stories, BabyPop, Cat Lovers Community"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Education",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "3",
+                            "value": 18,
+                            "apps": ["StoryToys Pirate Princess, Team Umizoomi: Math Racer HD, AWSome - AWS Practice Exams"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 134,
+                            "apps": ["Addition and subtraction Premium, Happies - Practice your oral motricity, Sago Mini Hat Maker"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 19,
+                            "apps": ["600+ Math Word Problems (PRO), Electronic Component Pinouts Full, Equilibrians"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 162,
+                            "apps": ["Kaplan Bar Review, Brightspace Assignment Grader, TeacherVUE"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 147,
+                            "apps": ["GLOBE Observer, Shkolo, Fastweb College Scholarships"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 350,
+                            "apps": ["Dr. Panda Town, GRE Tutor, Root for Android - All About"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 921,
+                            "apps": ["Hardevbani - Nirankari Mission, Sinhala Buddhist Books, The Prisoner Of Zenda"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 259,
+                            "apps": ["ABC Teach kids The Alphabet, Advanced Survival Manual, AGENDA EDUCACIONAL MASTER"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Entertainment",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "2",
+                            "value": 1,
+                            "apps": ["Kung Fu Panda Stickers"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 2,
+                            "apps": ["Love Your Inner Goddess Oracle - Alana Fairchild, Isis Oracle"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 21,
+                            "apps": ["Paint by Numbers - Dinosaurs +, Stick Nodes Pro - Stickfigure Animator, My Talking Pet Pro"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 2,
+                            "apps": ["Dials For X-Wing 2 - Empire, Magic Room"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 7,
+                            "apps": ["AT&T WatchTV, Mediaset Italia, TV Listings Guide Ireland"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 56,
+                            "apps": ["Game Center, Power FM Zimbabwe (Official), udirc-PRO"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 406,
+                            "apps": ["The Lion, Cinemagia Tab - program TV, Police Siren"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 1316,
+                            "apps": ["Babbu Maan, Quotes Maker : Shayari Jo Deewana Bana De, Amazing Facts - Did You Know That?"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 51,
+                            "apps": ["AnbuTv Aruppukottai, Being Alpha, Best Couple in Christ Quotes & Bible Verses"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Finance",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "3",
+                            "value": 2,
+                            "apps": ["ASX Stock Screener Pro, Stock Screener Pro"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 17,
+                            "apps": ["US Military Pay Calc, Currency Converter Plus, AndroMoney Pro"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 2,
+                            "apps": ["Everyday Finance Pro, I AM RICH"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 14,
+                            "apps": ["CommBiz, Powercash 0 Mobile, ACU Wallet"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 68,
+                            "apps": ["OTC Network, DaviPlata Global, S-pushTAN"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 390,
+                            "apps": ["OFA Client, Metrobank Mobile Banking, HDFC Bank MobileBanking"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 734,
+                            "apps": ["TBC Wallet, Revolut - Better than your bank, Tinkoff"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 26,
+                            "apps": ["BCR MPOS, CommBank Simplify Controls, Conta Stone"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Food",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 1,
+                            "apps": ["Rawvana's Raw Recipes"]
+                        },
+
+                        {
+                            "name": "3",
+                            "value": 2,
+                            "apps": ["CBartender's Choice Vol.2, Price My Cake, Jessica Gavin - Recipes by a Culinary Scientist"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 7,
+                            "apps": ["Cookie + Kate - Celebrating Whole Foods!, Tip Calculator Pro, My Cocktail Bar Pro"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 1,
+                            "apps": ["Pickled Plum - Eat Healthy, Easily"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 2,
+                            "apps": ["Lucky's Market Delivers, UFOOD"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 17,
+                            "apps": ["Corner Bakery Cafe, ACN Cafe, Barnes & Noble Cafe"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 94,
+                            "apps": ["Perfect Drink, Vons Online Shopping, Healthy Recipes Free"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 244,
+                            "apps": ["Spenlo - Online Grocery Store, hipMenu - Easy Food Delivery, aiqfome - Delivery de Comida"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 41,
+                            "apps": ["Almina's On Gawler Place, Bamboo Healthy, Namma Cafe"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Music",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "3",
+                            "value": 4,
+                            "apps": ["Lemur, Orpheus Sheet Music PRO, DJ Studio 5 - Skin Bundle"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 38,
+                            "apps": ["Free Mp3 Music Downloader for VIP, s.mart UNLIMITED, Voice Recorder Pro"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 3,
+                            "apps": ["Alabadle con Entendimiento, Metronome Pro, Songo Recorder"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 4,
+                            "apps": ["Altec Connect, Singing Machine Kids' Karaoke, Smart Pianist"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 14,
+                            "apps": ["RaiPlay Radio, NPO Radio 1 Nieuws & Sport, Descargar Musica Y Videos Gratis Mp3 Y Mp4 Guide"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 144,
+                            "apps": ["Best Free Ringtones, Sony | Music Center (SongPal), Instrumental Music & Songs by Gaana"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 899,
+                            "apps": ["Om mani padme hum(HD Audio), Frecuencia Arena 98.3 Mhz, SPIRIT 105.9"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 38,
+                            "apps": ["American National Anthem: The Star-Spangled Banner, Antiguo Himnario Adventista 1962, Avril Lavigne - Album & Hits 2019"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Photography",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "3",
+                            "value": 8,
+                            "apps": ["Pencil Sketch Ad-Free, Camera 4K Pro - Perfect, Selfie, Video, Photo, Thermal Camera+ for FLIR One"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 27,
+                            "apps": ["Photographer's companion Pro, Photo Lab PRO Picture Editor: effects, blur & art, Simple Gallery Pro: Photo Manager & Editor"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 1,
+                            "apps": ["Golden Hour Supporter"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 2,
+                            "apps": ["Creative Photo Frame, Invitation Card Maker | Greeting Card Maker"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 16,
+                            "apps": ["X Photo Editor - Cartoon Effect & Fashion Makeup, Fujifilm GetPix Kiosk, Picture Invert"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 101,
+                            "apps": ["Google Camera, Quotes Maker, Space"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 456,
+                            "apps": ["MiX Image, Pixels Wallpapers, Calculator Photo Vault - Hide Photos & Videos"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 7,
+                            "apps": ["3D Effects, 4K Pre-Burst, ibi - The Smart Photo Manager"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Shopping",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "4",
+                            "value": 2,
+                            "apps": ["OurGroceries Key, Simple Shopping List Pro"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "2",
+                            "value": 15,
+                            "apps": ["Grailed, passabene, KT Shop"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 138,
+                            "apps": ["Future Pay, Shop Disney, Amazon for Tablets"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 428,
+                            "apps": ["Ugakart, I Market, Colmapp Para Colmados"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 14,
+                            "apps": ["Banquet - Shop Top Wine Stores, CelebShop, Fanatic"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Social",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 1,
+                            "apps": ["Private Dating, Hide App-Black for PrivacyHider"]
+                        },
+
+                        {
+                            "name": "3",
+                            "value": 1,
+                            "apps": ["Disney Stickers: Mickey & Friends"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 9,
+                            "apps": ["Talon for Twitter, iCorps: Pocket Reference"]
+                        }
+
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 1,
+                            "apps": ["English Calendar 2019 India"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 2,
+                            "apps": ["Ameba, TIM Eventi"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 53,
+                            "apps": ["Puffin for Facebook, Plume for Twitter, Hornet - The Gay Social Network"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 315,
+                            "apps": ["ZConnect, My GMS - Gereja Mawar Sharon, ARMY Amino for BTS Stans"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 13,
+                            "apps": ["All Ufone Network Packages 2019, AMYTY The International Students App, SocialWay"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Sports",
+            "apps": [""],
+            "children": [{
+                    "name": "Paid",
+                    "apps": [],
+                    "children": [{
+                            "name": "3",
+                            "value": 4,
+                            "apps": ["Air Density & RAD Meter, COLLEGE FIGHTSONGS OFFICIAL, Jetting for Rotax Max Evo"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 13,
+                            "apps": ["Baseball MLB 2019 Schedule & Scores: PRO Edition, Fantasy Football Manager Pro, SkiApp PRO - THE Ski Computer"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 2,
+                            "apps": ["etting for Suzuki RM dirtbike, Sydney Climbing Guide"]
+                        }
+
+
+                    ]
+                },
+                {
+                    "name": "Unpaid",
+                    "apps": [],
+                    "children": [{
+                            "name": "1",
+                            "value": 3,
+                            "apps": ["GOLFPASS, The Summit League"]
+                        },
+                        {
+                            "name": "2",
+                            "value": 12,
+                            "apps": ["iScore Central - Game Viewer, kicker Tippspiel, Experience NAIA Championships"]
+                        },
+                        {
+                            "name": "3",
+                            "value": 128,
+                            "apps": ["NASCAR Acceleration Nation - racing for kids, PGA TOUR, Davis Cup"]
+                        },
+                        {
+                            "name": "4",
+                            "value": 411,
+                            "apps": ["KBNPL - KBN Premier League, CONMEBOL Sudamericana, South Bay Lakers Official App"]
+                        },
+                        {
+                            "name": "5",
+                            "value": 19,
+                            "apps": ["2018 World Cup, Big Bas 2018-19 Schedule and Live Score, BMX NSW"]
+
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "Game",
+            "apps": [""],
+            "children": [{
+                    "name": "Action",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "1",
+                                    "value": 1,
+                                    "apps": ["Ever Knight"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 11,
+                                    "apps": ["Gangstar Rio: City of Saints, TMNT: ROOFTOP RUN, Thrive Island - Survival"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 48,
+                                    "apps": ["Moshpit - Heavy Metal is war, PewDiePie: Legend of Brofist, Dungeon Defense"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 1,
+                                    "apps": ["Ninja: 99 Rooms Challenge"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "1",
+                                    "value": 1,
+                                    "apps": ["hit the jar!"]
+                                },
+                                {
+                                    "name": "2",
+                                    "value": 3,
+                                    "apps": ["GalaxyStrike, Baseball Dash, Loot and Run (Alpha)"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 56,
+                                    "apps": ["Gun Master 3: Zombie Slayer, Scare Your Friends - JOKE!, Dhoom:3 The Game"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 439,
+                                    "apps": ["Super Cat Bros, Tank Battle Heroes: World of Shooting, Super Starfish"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 6,
+                                    "apps": ["Helix Hurdle, Hell-X Jump, Pingu Jump"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Adventure",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "2",
+                                    "value": 2,
+                                    "apps": ["PAW Patrol Pups to the Rescue, Helix Worl"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 11,
+                                    "apps": ["The Secret of Grisly Manor, Yesterday Origins, I am Bread"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 83,
+                                    "apps": ["Rusty Lake: Roots, Knight Riders : Game, Crashlands"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 3,
+                                    "apps": ["Asylum 2019, Dangerous Dilbert, Route Runnaz 2"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "2",
+                                    "value": 1,
+                                    "apps": ["Zoombinis Research Edition"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 18,
+                                    "apps": ["Murder Room, Candy, Please! (Free), Ellie - Help me out, please…"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 191,
+                                    "apps": ["Adventures Of Cat, Cube Escape: Paradox, Cube Escape: Theatre"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 1,
+                                    "apps": ["Zebra Dash"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Arcade",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "3",
+                                    "value": 15,
+                                    "apps": ["FATAL FURY SPECIAL, Miner Premium, Marvel Pinball"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 69,
+                                    "apps": ["Sausage Bomber, Spitkiss, Brick Game Pro"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 3,
+                                    "apps": ["Adva N64 Simulator, Super8Pro (NES Emulator), Tsunami Rider"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "1",
+                                    "value": 1,
+                                    "apps": ["Swing Legend"]
+                                },
+
+                                {
+                                    "name": "3",
+                                    "value": 85,
+                                    "apps": ["Zombie Slayer, Fist of Fury, Panda NES - NES Emulator"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 465,
+                                    "apps": ["Sushi Ride, Slots: Hot Vegas Slot Machines Casino & Free Games, Slot Machines!"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 9,
+                                    "apps": ["Bitcoin Reflex Game Cryptocurrencies, cash me ousside how bout dah?, LavaPop"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Board",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "3",
+                                    "value": 5,
+                                    "apps": ["SUBURBIA City Building Game, Catan Classic, Rummikub"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 30,
+                                    "apps": ["Hactar Go, Galaxy Trucker, World Racers family board game"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "1",
+                                    "value": 1,
+                                    "apps": ["X-Wing Squad Builder by FFG"]
+                                },
+                                {
+                                    "name": "2",
+                                    "value": 2,
+                                    "apps": ["Backgammon NJ Online, Gravity Pops!"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 27,
+                                    "apps": ["Europoly, ZingPlay - Chinese Chess - Banqi - Blind Chess, Checkers Free"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 175,
+                                    "apps": ["Slots: VIP Deluxe Slot Machines Free - Vegas Slots, Tap Color    Color by Number, Slots: Fast Fortune Slot Games Casino - Free Slots"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 3,
+                                    "apps": ["Jewel Bling! - Block Puzzle, Ludo Classic Master, Puzzle 15"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Card",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "3",
+                                    "value": 1,
+                                    "apps": ["Dominoes Deluxe"]
+
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 16,
+                                    "apps": ["Tides of Time,Cultist Simulator, Reigns: Her Majesty"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "3",
+                                    "value": 47,
+                                    "apps": ["Poker Online, Septica 3D, Hearts Deluxe"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 307,
+                                    "apps": ["Solitaire - Island Adventure, Spades Royale - Card Game, Blackjack 21"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 2,
+                                    "apps": ["Ace In The Hole Solitaire, Pyramid Card Game (Classic)"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Puzzle",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "3",
+                                    "value": 7,
+                                    "apps": ["Gravity, New Math Puzzles  for Geniuses 2019, Find My Shadow"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 93,
+                                    "apps": ["The Room: Old Sins, RowRow, The Room Three"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 6,
+                                    "apps": ["Catch The Fish HD, English Riddles Guessing Game PRO, Fantasy Mosaics 29: Alien Planet"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "2",
+                                    "value": 2,
+                                    "apps": ["Enter - IT Security Game, Patchwork Spaceship"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 83,
+                                    "apps": ["Osmosmerka, Crystal Balls - Blast Collapse, Math Puzzle With Sticks"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 704,
+                                    "apps": ["Helen's Quiz, Tile Photo Puzzle, Mastermind"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 19,
+                                    "apps": ["2048 - Faustop Edition, Animal Sounds - Jigsaw Puzzles for Kids., Bemazer"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Racing",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "3",
+                                    "value": 7,
+                                    "apps": ["2XL Supercross HD, Need for Speed Most Wanted, Ricky Carmichael's Motocross"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 17,
+                                    "apps": ["Motorsport Manager Mobile 3, Bike Race Pro by T. F. Games, Jet Car Stunts"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 1,
+                                    "apps": ["Dream Racer V1"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "1",
+                                    "value": 1,
+                                    "apps": ["Horse Race Challenge"]
+                                },
+                                {
+                                    "name": "2",
+                                    "value": 1,
+                                    "apps": ["Raloco RC, Hot Wheels Augmoto"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 68,
+                                    "apps": ["Toy Truck Rally 3D, City car racing, Tilt Racing"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 219,
+                                    "apps": ["DATA WING, Dead Ahead, Top Drives Car Cards Racing"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 1,
+                                    "apps": ["Hill Racing PvP"]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Word",
+                    "apps": [""],
+                    "children": [{
+                            "name": "Paid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "4",
+                                    "value": 3,
+                                    "apps": ["Word Master - Pro, Word Flood PRO, Draw Something"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 2,
+                                    "apps": ["GuessUp - Word Party Charades (No Ads), GuessUp Kids - Party Charades"]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Unpaid",
+                            "apps": [],
+                            "children": [{
+                                    "name": "2",
+                                    "value": 1,
+                                    "apps": ["Word Pets - Free Word Puzzle Games"]
+                                },
+                                {
+                                    "name": "3",
+                                    "value": 13,
+                                    "apps": ["Word Helper for Scrabble, Wordbase Fun Word Search Battles with Friends, SCRABBLE"]
+                                },
+                                {
+                                    "name": "4",
+                                    "value": 200,
+                                    "apps": ["Word Candies: Word Cross Word Puzzle Game, Word Connect - cookies word, word puzzle games,Word City - Word Connect Puzzle Game"]
+                                },
+                                {
+                                    "name": "5",
+                                    "value": 4,
+                                    "apps": ["Glyph, Grow your childrens intelligence, Uschool - Pinoy Trivia/Quiz"]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+
+}

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    text {
+        font: 10px sans-serif;
+        fill: white;
+    }
+    
+    rect.background {
+        fill: transparent;
+    }
+    
+    .axis {
+        shape-rendering: crispEdges;
+    }
+    
+    .axis path,
+    .axis line,
+    .axis text {
+        fill: none;
+        stroke: #fff;
+    }
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="proj.css">
+
+<body>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+
+    <nav class="navbar navbar-default navbar-expand-sm navbar-dark">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="info.html"><span><img src=icon.png width="100px" height="35px"></span></a>
+            <a class="navbar-brand" href="Homepage.html" style="color: black;">Home</a>
+
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link active" href="charts.html" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;"> Hierarchical Charts</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="bars.html" style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Bar Chart</a>
+            </li>
+
+        </ul>
+
+        <h3 style="padding-left: 4em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;padding-top: 7px; font-style: inherit;">CSCI 6406</h3>
+        <p style="padding-left: 19em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;color: black;padding-top: 10px; font-size: 18px;">Santosh Kumar Medisetty(B00836673)</p>
+
+    </nav>
+    <h2 style="padding-left: 13em;">Click on below buttons to display charts</h2>
+    <div class="row" style="padding-left: 25em;padding-top: 0em;">
+
+        <a href="sburst.html" class="btn1 btn-info btn-sm active" role="button" aria-pressed="true">Sunburst Chart</a>
+        <a href="hbar.html" class="btn1 btn-info btn-sm active" role="button" aria-pressed="true">Hierarchical Bar
+            Chart</a>
+
+    </div>
+
+    <div class="row" style="box-shadow: 10px 10px grey;">
+        <div class="col-sm-7" style="padding-left: 15em;">
+            <div id="hbar"></div>
+
+        </div>
+
+    </div>
+    <script>
+        var width = 720,
+            height = 420;
+
+        //Creating x-axis
+        var x = d3.scale.linear()
+            .range([0, width]);
+
+        var barHeight = 25;
+        //Applying color scheme
+        var color = d3.scale.ordinal()
+            .range(["#34b1eb", "#81a3a7"]);
+
+        var duration = 750,
+            delay = 25;
+
+        var partition = d3.layout.partition()
+            .value(function(d) {
+                return d.value;
+            });
+
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("top");
+
+        //Creating svg
+        var svg = d3.select("#hbar").append("svg")
+            .attr("width", 960)
+            .attr("height", 500)
+            .append("g")
+            .attr("transform", "translate(120,80)")
+
+        //Appending rectangles in svg
+        svg.append("rect")
+            .attr("class", "background")
+            .attr("width", width)
+            .attr("height", height)
+            .on("click", up);
+
+        //Appending x-axis to rectangles
+        svg.append("g")
+            .attr("class", "x axis")
+            .append("text")
+            .attr("transform", "translate(300,-25)")
+            .style("text-anchor", "middle")
+            .text("Number of Apps")
+            .attr("font-family", "sans-serif");
+
+        //Appending y-axis to rectangles
+        svg.append("g")
+            .attr("class", "y axis")
+            .append("line")
+            .attr("y1", "70%")
+
+        d3.json("pr1.json", function(error, root) {
+            if (error) throw error;
+
+            partition.nodes(root);
+            x.domain([0, root.value]).nice();
+            down(root, 0);
+        });
+        var div = d3.select("body").append("div").attr("class", "toolTip");
+
+        function down(d, i) {
+            if (!d.children || this.__transition__) return;
+            var end = duration + d.children.length * delay;
+
+            var exit = svg.selectAll(".enter")
+                .attr("class", "exit");
+
+            exit.selectAll("rect").filter(function(e) {
+                    return e === d;
+                })
+                .style("fill-opacity", 1e-6);
+
+            var enter = bar(d)
+                .attr("transform", stack(i))
+                .style("opacity", 1);
+
+            enter.select("text").style("fill-opacity", 1e-6);
+            enter.select("rect").style("fill", color(true));
+
+            x.domain([0, d3.max(d.children, function(d) {
+                return d.value;
+            })]).nice();
+
+            svg.selectAll(".x.axis").transition()
+                .duration(750)
+                .call(xAxis);
+
+            var ET = enter.transition()
+                .duration(750)
+                .delay(function(d, i) {
+                    return i * delay;
+                })
+                .attr("transform", function(d, i) {
+                    return "translate(0," + barHeight * i * 1.2 + ")";
+                });
+
+            ET.select("text")
+                .style("fill-opacity", 1);
+
+            ET.select("rect")
+                .attr("width", function(d) {
+                    return x(d.value);
+                })
+                .style("fill", function(d) {
+                    return color(!!d.children);
+                })
+
+
+            var EXT = exit.transition()
+                .duration(duration)
+                .style("opacity", 1e-6)
+                .remove();
+
+            EXT.selectAll("rect")
+                .attr("width", function(d) {
+                    return x(d.value);
+                })
+
+
+            svg.select(".background")
+                .datum(d)
+                .transition()
+                .duration(end)
+
+
+            d.index = i;
+
+            //Applying mouse events
+            svg.selectAll("rect").on("mousemove", function(d) {
+                    div.style("left", d3.event.pageX + 10 + "px");
+                    div.style("top", d3.event.pageY - 25 + "px");
+                    div.style("display", "inline-block");
+                    div.html("Total\t" + d.value + "\tapps \tin " + (d.children ? d : d.parent).name + "\tcategory. ");
+
+                })
+                .on("mouseover", function(d) {
+                    d3.select(this).style("opacity", 0.5)
+
+                })
+
+            .on("mouseout", function(d) {
+                div.style("display", "none")
+                d3.select(this).style("opacity", 1.0)
+
+            })
+
+        }
+
+        function up(d) {
+            if (!d.parent || this.__transition__) return;
+            var end = duration + d.children.length * delay;
+
+            var exit = svg.selectAll(".enter")
+                .attr("class", "exit");
+
+            var enter = bar(d.parent)
+                .attr("transform", function(d, i) {
+                    return "translate(0," + barHeight * i * 1.2 + ")";
+                })
+                .style("opacity", 1e-6);
+
+            enter.select("rect")
+                .style("fill", function(d) {
+                    return color(!!d.children);
+                })
+                .filter(function(p) {
+                    return p === d;
+                })
+                .style("fill-opacity", 1e-6);
+
+            x.domain([0, d3.max(d.parent.children, function(d) {
+                return d.value;
+            })]).nice();
+
+            svg.selectAll(".x.axis").transition()
+                .duration(duration)
+                .call(xAxis);
+
+            var ET = enter.transition()
+                .duration(end)
+                .style("opacity", 1);
+
+            ET.select("rect")
+                .attr("width", function(d) {
+                    return x(d.value);
+                })
+                .each("end", function(p) {
+                    if (p === d) d3.select(this).style("fill-opacity", null);
+                });
+
+            var EXT = exit.selectAll("g").transition()
+                .duration(duration)
+                .delay(function(d, i) {
+                    return i * delay;
+                })
+                .attr("transform", stack(d.index));
+
+            EXT.select("text")
+                .style("fill-opacity", 1e-6);
+
+            EXT.select("rect")
+                .attr("width", function(d) {
+                    return x(d.value);
+                })
+                .style("fill", color(true));
+
+            exit.transition()
+                .duration(end)
+                .remove();
+
+            svg.select(".background")
+                .datum(d.parent)
+                .transition()
+                .duration(end)
+
+            //Applying mouse events
+            svg.selectAll("rect").on("mousemove", function(d) {
+                    div.style("left", d3.event.pageX + 10 + "px");
+                    div.style("top", d3.event.pageY - 25 + "px");
+                    div.style("display", "inline-block");
+                    div.html("Total\t" + d.value + "\tapps \tin " + (d.children ? d : d.parent).name + "\tcategory. ");
+                    d3.select(this).style("opacity", 0.5)
+                })
+                .on("mouseover", function(d) {
+                    d3.select(this).style("opacity", 0.5)
+
+                })
+
+            .on("mouseout", function(d) {
+                div.style("display", "none");
+                d3.select(this).style("opacity", 1.0)
+
+            })
+
+        }
+
+        function bar(d) {
+            var bar = svg.insert("g", ".y.axis")
+                .attr("class", "enter")
+                .attr("transform", "translate(0,5)")
+                .selectAll("g")
+                .data(d.children)
+                .enter()
+                .append("g")
+                .on("click", down);
+
+            bar.append("text")
+                .attr("x", -10)
+                .attr("y", barHeight / 2)
+                .attr("dy", ".35em")
+                .style("text-anchor", "end")
+                .text(function(d) {
+                    return d.name;
+                });
+
+            bar.append("rect")
+                .attr("width", function(d) {
+                    return x(d.value);
+                })
+                .attr("height", barHeight);
+
+            return bar;
+
+        }
+
+        function stack(i) {
+            var x0 = 0;
+            return function(d) {
+                var tx = "translate(" + x0 + "," + barHeight * i * 1.2 + ")";
+                x0 += x(d.value);
+                return tx;
+            };
+        }
+    </script>

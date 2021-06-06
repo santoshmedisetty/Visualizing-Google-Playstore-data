@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    path {
+        stroke: white;
+        fill-rule: evenodd;
+    }
+    
+    text {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+    }
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="proj.css">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-expand-sm navbar-dark">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="info.html"><span><img src=icon.png width="100px" height="35px"></span></a>
+            <a class="navbar-brand" href="Homepage.html" style="color: black;">Home</a>
+
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link active" href="charts.html" style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;"> Hierarchical Charts</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link " href="bars.html" style="color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 20px;">Bar Chart</a>
+            </li>
+
+        </ul>
+
+        <h3 style="padding-left: 4em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: black;padding-top: 7px; font-style: inherit;">CSCI 6406</h3>
+        <p style="padding-left: 19em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;color: black;padding-top: 10px; font-size: 18px;">Santosh Kumar Medisetty(B00836673)</p>
+
+    </nav>
+    <h2 style="padding-left: 13em;">Click on below buttons to display charts</h2>
+    <div class="row" style="padding-left: 25em;padding-top: -20px;">
+
+        <a href="sburst.html" class="btn1 btn-info btn-sm active" role="button" aria-pressed="true">Sunburst Chart</a>
+        <a href="hbar.html" class="btn1 btn-info btn-sm active" role="button" aria-pressed="true">Hierarchical Bar Chart</a>
+
+    </div>
+    <div class="row" style="color: white;">
+        <div class="col-sm-7" style="padding-left: 3em;">
+            <div id="sunburst"></div>
+
+        </div>
+        <div class="col-sm-4" style="padding-top: 2em;">
+            <h3>Top Apps in the selected category:</h3>
+            <div id="application">Select a rating on the chart to display the top applications in that category.</div>
+
+        </div>
+
+    </div>
+
+    <script>
+        var width = 960,
+            height = 700,
+            radius = Math.min(width, height) / 2;
+
+        var x = d3.scale.linear()
+            .range([0, 2 * Math.PI]);
+
+        var y = d3.scale.linear()
+            .range([0, radius]);
+
+        var color = d3.scale.category20c();
+
+        var div = d3.select("body").append("div").attr("class", "toolTip");
+        //Setting up SVG
+        var svg = d3.select("#sunburst").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
+
+        var partition = d3.layout.partition()
+            .value(function(d) {
+                return d.value;
+            });
+        //Setting up outline of Sunburst chart    
+        var arc = d3.svg.arc()
+            .startAngle(function(d) {
+                return Math.max(0, Math.min(2 * Math.PI, x(d.x)));
+            })
+            .endAngle(function(d) {
+                return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx)));
+            })
+            .innerRadius(function(d) {
+                return Math.max(0, y(d.y));
+            })
+            .outerRadius(function(d) {
+                return Math.max(0, y(d.y + d.dy));
+            });
+
+        d3.json("pr1.json", function(root) {
+            //Appending data to Sunburst
+            var g = svg.selectAll("g")
+                .data(partition.nodes(root))
+                .enter()
+                .append("g");
+
+            var path = g.append("path")
+                .attr("d", arc)
+                .attr("fill", d => {
+                    while (d.depth > 1) d = d.parent;
+                    return color(d.name);
+                })
+
+            .on("mousemove", function(d) {
+                div.style("left", d3.event.pageX + 10 + "px");
+                div.style("top", d3.event.pageY - 25 + "px");
+                div.style("display", "inline-block");
+                div.html("Total\t" + d.value + "\tapps \tin " + (d.children ? d : d.parent).name + "\tcategory. ");
+            })
+
+            .on("mouseout", function(d) {
+                div.style("display", "none");
+
+            })
+
+            .on("click", click);
+            //writing text data to sunburst
+            var text = g.append("text")
+                .attr("transform", function(d) {
+                    return "rotate(" + rotateText(d) + ")";
+                })
+                .attr("x", function(d) {
+                    return y(d.y);
+                })
+                .attr("dx", "6")
+                .attr("dy", "0.35em")
+                .text(function(d) {
+                    return d.name;
+                });
+
+            function click(d) {
+
+                //Applying transitions
+                text.transition().attr("opacity", 0);
+                document.getElementById("application").innerHTML = d.apps;
+
+                path.transition()
+                    .duration(750)
+                    .attrTween("d", arcTweening(d))
+                    .each("end", function(p) {
+
+                        if (p.x >= d.x && p.x < (d.x + d.dx)) {
+
+                            var arcTxt = d3.select(this.parentNode).select("text");
+
+                            arcTxt.transition().duration(750)
+                                .attr("opacity", 1)
+                                .attr("transform", function() {
+                                    return "rotate(" + rotateText(p) + ")"
+                                })
+                                .attr("x", function(d) {
+                                    return y(d.y);
+                                });
+                        }
+                    });
+            }
+        });
+
+        d3.select(self.frameElement).style("height", height + "px");
+
+        function arcTweening(d) {
+            var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+                yd = d3.interpolate(y.domain(), [d.y, 1]),
+                yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+            return function(d, i) {
+                return i ?
+
+                    function(t) {
+                        return arc(d);
+                    } :
+                    function(t) {
+                        x.domain(xd(t));
+                        y.domain(yd(t)).range(yr(t));
+                        return arc(d);
+                    };
+            };
+        }
+
+        function rotateText(d) {
+            return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
+        }
+    </script>
+</body>
